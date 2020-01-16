@@ -1,0 +1,46 @@
+<po-page-edit p-title="Turma" [p-disable-submit]="!reactiveForm.valid">
+  <form [formGroup]="reactiveForm" >
+    <po-stepper>
+      <po-step p-label="Dados gerais">
+        <div class="po-row">
+          <po-input
+            class="po-md-12"
+            formControlName="descricao"
+            p-clean
+            p-label="Descrição"
+          >
+          </po-input>
+        </div>
+        <div class="po-row">
+          <po-number
+            class="po-lg-4"
+            formControlName="anoLetivo"
+            p-label="Ano Letivo"
+            p-clean
+          >
+          </po-number>
+          <po-number
+            class="po-lg-4"
+            formControlName="periodoLetivo"
+            p-label="Período Letivo"
+            p-clean
+          >
+          </po-number>
+          <po-number
+            class="po-lg-4"
+            formControlName="numeroVagas"
+            p-label="Número vagas"
+            p-clean
+          >
+          </po-number>
+        </div>
+      </po-step>
+      <po-step p-label="Alunos">
+        alunos
+      </po-step>
+      <po-step p-label="Disciplinas">
+        disciplinas
+      </po-step>
+    </po-stepper>
+  </form>
+</po-page-edit>
